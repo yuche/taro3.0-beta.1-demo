@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Taro from '@tarojs/taro'
 import { View, Button, Text } from '@tarojs/components'
 import { observer, inject } from 'mobx-react'
 
@@ -54,6 +55,7 @@ class Index extends Component {
         <Button onClick={this.increment}>+</Button>
         <Button onClick={this.decrement}>-</Button>
         <Button onClick={this.incrementAsync}>Add Async</Button>
+        <Button onClick={() => Taro.navigateTo({ url: '/pages/weIndex/weIndex' })}>go to native pages</Button>
         <Text>{counter}</Text>
       </View>
     )

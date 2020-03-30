@@ -12,7 +12,7 @@ const store = {
 
 class App extends Component {
   componentDidMount () {
-    console.log(util2)
+    console.log()
   }
 
   componentDidShow () {}

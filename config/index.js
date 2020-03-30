@@ -14,6 +14,12 @@ const config = {
   },
   copy: {
     patterns: [
+      {
+        from: "src/pages/weIndex", to: "dist/pages/weIndex",
+      },
+      {
+        from: "src/app.json", to: "dist/app.json"
+      }
     ],
     options: {
     }
